@@ -9,8 +9,8 @@ Feature: DataTable ve Senario Outline
   Scenario Outline:itemCategory Create and Delete
 
     And Click on the Element in LeftNav
-      | Inventory    |
-      | Setup        |
+      | Inventory      |
+      | Setup          |
       | itemCategories |
 
     And Click on the Element in Dialog
@@ -20,9 +20,9 @@ Feature: DataTable ve Senario Outline
       | nameInput | <name> |
 
     And Click on the Element in Dialog
-      | UserType   |
-      | <selections>|
-      | saveButton |
+      | UserType     |
+      | <selections> |
+      | saveButton   |
 
     Then Success message should be displayed
 
@@ -31,9 +31,9 @@ Feature: DataTable ve Senario Outline
 
     Then Success message should be displayed
     Examples:
-      | name     | | selections |
-      | fuN1K111 | | teacher    |
-      | fuN1K211 | | Administrator |
-      | fuN1K311 | | Student |
-      | fuN1K411 | | Everyone |
-      | fuN1K511 | | EmployeeRole |
+      | name     |  | selections    |
+      | fuN1K111 |  | teacher       |
+      | fuN1K211 |  | Administrator |
+      | fuN1K311 |  | Student       |
+      | fuN1K411 |  | Everyone      |
+      | fuN1K511 |  | EmployeeRole  |
