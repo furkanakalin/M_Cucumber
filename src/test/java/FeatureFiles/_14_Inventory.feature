@@ -5,7 +5,6 @@ Feature: DataTable ve Senario Outline
     When Enter username and password and click login button
     Then User should login successfully
 
-
   Scenario Outline:itemCategory Create and Delete
 
     And Click on the Element in LeftNav

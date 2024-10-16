@@ -101,6 +101,28 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//*[text()='Save']")
     public WebElement Save;
 
+    @FindBy(xpath = "(//*[text()='Academic Period'])[1]")
+    public WebElement academicperiod;
+
+    @FindBy(xpath = "//*[text()=' Internship  ']")
+    public WebElement internship;
+
+    @FindBy(xpath = "(//*[text()='Grade Level'])[1]")
+    public WebElement gradelevel;
+
+    @FindBy(xpath = "//*[text()=' Luciano ']")
+    public WebElement luciano;
+
+    @FindBy(xpath = "//*[text()=' gold _ f ']")
+    public WebElement golff;
+
+    @FindBy(xpath = "//*[text()=' Valentine ']")
+    public WebElement valentine;
+
+    @FindBy(xpath = "//*[text()=' Carman ']")
+    public WebElement carman;
+
+
 
     public void verifyMessageContainsText(String value){
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//hot-toast-container/div/div/div//*"),0));
@@ -144,8 +166,14 @@ public class DialogContent extends ParentPage {
             case "Everyone": return this.Everyone;
             case "EmployeeRole": return this.EmployeeRole;
             case "Save": return this.Save;
+            case "academicperiod": return this.academicperiod;
+            case "internship": return this.internship;
+            case "gradelevel": return this.gradelevel;
+            case "luciano": return this.luciano;
+            case "golff": return this.golff;
+            case "valentine": return this.valentine;
+            case "carman": return this.carman;
         }
-
         return null;
     }
 
