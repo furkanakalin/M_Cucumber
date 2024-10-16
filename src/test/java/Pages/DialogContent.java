@@ -122,6 +122,18 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//*[text()=' Carman ']")
     public WebElement carman;
 
+    @FindBy(xpath = "//input[@placeholder='Name']")
+    public WebElement SearchInput;
+
+    @FindBy(xpath = "(//*[contains (span,'Exam')])[4]")
+    public WebElement backbutton;
+
+    @FindBy(xpath = "//ms-delete-button//button")
+    public WebElement deleteButton;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement accandDelButton;
+
 
 
     public void verifyMessageContainsText(String value){
@@ -173,6 +185,11 @@ public class DialogContent extends ParentPage {
             case "golff": return this.golff;
             case "valentine": return this.valentine;
             case "carman": return this.carman;
+            case "SearchInput": return this.SearchInput;
+            case "backbutton": return this.backbutton;
+            case "searchButton": return this.searchButton;
+            case "deleteButton": return this.deleteButton;
+            case "accandDelButton": return this.accandDelButton;
         }
         return null;
     }

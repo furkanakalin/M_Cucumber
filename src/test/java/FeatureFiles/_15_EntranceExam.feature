@@ -8,15 +8,16 @@ Feature: DataTable ve Senario Outline
   Scenario Outline: Exam Create and Delete
 
     And Click on the Element in LeftNav
-      | EntranceExam  |
+      | EntranceExams |
       | esetup        |
       | entranceexams |
 
     And Click on the Element in Dialog
       | addButton |
 
+
     And User sending the keys in Dialog
-      | nameInput |  | <name> |
+      | nameInput | <name> |
 
     And Click on the Element in Dialog
       | academicperiod |
@@ -27,13 +28,22 @@ Feature: DataTable ve Senario Outline
 
     Then Success message should be displayed
 
-    And User delete the element from dialog
-      | <name> |
+    And Click on the Element in Dialog
+      | backbutton |
+
+    And User sending the keys in Dialog
+      | SearchInput | <name> |
+
+    And Click on the Element in Dialog
+      | searchButton |
+      | deleteButton |
+      | accandDelButton |
 
     Then Success message should be displayed
+
     Examples:
       | name     |  | selections |
-      | fuak1907 |  | luciano    |
-      | fuak1908 |  | golff      |
-      | fuak1909 |  | valentine  |
-      | fuak1910 |  | carman     |
+      | fuak1957 |  | luciano    |
+      | fuak1958 |  | golff      |
+      | fuak1959 |  | valentine  |
+      | fuak1960 |  | carman     |
