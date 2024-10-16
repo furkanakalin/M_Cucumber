@@ -119,8 +119,8 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//*[text()=' Valentine ']")
     public WebElement valentine;
 
-    @FindBy(xpath = "//*[text()=' Carman ']")
-    public WebElement carman;
+    @FindBy(xpath = "//*[text()=' Alvin ']")
+    public WebElement alvin;
 
     @FindBy(xpath = "//input[@placeholder='Name']")
     public WebElement SearchInput;
@@ -184,7 +184,7 @@ public class DialogContent extends ParentPage {
             case "luciano": return this.luciano;
             case "golff": return this.golff;
             case "valentine": return this.valentine;
-            case "carman": return this.carman;
+            case "alvin": return this.alvin;
             case "SearchInput": return this.SearchInput;
             case "backbutton": return this.backbutton;
             case "searchButton": return this.searchButton;

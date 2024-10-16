@@ -15,7 +15,6 @@ Feature: DataTable ve Senario Outline
     And Click on the Element in Dialog
       | addButton |
 
-
     And User sending the keys in Dialog
       | nameInput | <name> |
 
@@ -35,15 +34,15 @@ Feature: DataTable ve Senario Outline
       | SearchInput | <name> |
 
     And Click on the Element in Dialog
-      | searchButton |
-      | deleteButton |
+      | searchButton    |
+      | deleteButton    |
       | accandDelButton |
 
     Then Success message should be displayed
 
     Examples:
-      | name     |  | selections |
-      | fuak1957 |  | luciano    |
-      | fuak1958 |  | golff      |
-      | fuak1959 |  | valentine  |
-      | fuak1960 |  | carman     |
+      | name    |  | selections |
+      | fuak1954ro |  | luciano    |
+      | fuak1984ro |  | golff      |
+      | fuak2017ro |  | valentine  |
+      | fuak2024ro |  | alvin      |
