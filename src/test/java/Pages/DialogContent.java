@@ -1,10 +1,9 @@
 package Pages;
 
-import Utilities.GWD;
+import Utilities.GWD_OLD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,7 +13,7 @@ import org.testng.Assert;
 public class DialogContent extends ParentPage {
 
     public DialogContent() {
-        PageFactory.initElements(GWD.getDriver(), this);
+        PageFactory.initElements(GWD_OLD.getDriver(), this);
     }
 
     @FindBy(css="[formcontrolname='username']")
@@ -141,7 +140,7 @@ public class DialogContent extends ParentPage {
         Assert.assertTrue( this.messageBox.getAttribute("innerHTML").toLowerCase().contains(value.toLowerCase()));
 
         //sayfaya ESC tuşu gönderildi, açık mesaj kalmasın diye
-        new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
+        new Actions(GWD_OLD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
     }
 
     public void deleteItem(String deleteName)

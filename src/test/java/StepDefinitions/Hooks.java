@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import Utilities.GWD;
+import Utilities.GWD_OLD;
 import io.cucumber.java.After;
 
 public class Hooks {   //Kanca
@@ -11,7 +11,7 @@ public class Hooks {   //Kanca
     @After
     public void after()
     {
-        GWD.quitDriver();
+        GWD_OLD.quitDriver();
     }
 
 }
